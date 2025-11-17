@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- LINK ALLA SITEMAP -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+    <!-- Collegamento al file CSS esterno -->
+    <link rel="stylesheet" href="style.css">
+<!-- ...continua con il resto del codice... -->
+
+    <!-- <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .header {
+            background-color: rgb(67, 1, 1);
+            color: white;
+            display: flex;
+            html {
+                box-sizing: border-box;
+            }
+            *, *:before, *:after {
+                box-sizing: inherit;
+            }
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background: #fff;
+            }
+            .header {
+                background-color: rgb(67, 1, 1);
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 5vw;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                z-index: 1000;
+                min-height: 70px;
+            }
+            .menu {
+                cursor: pointer;
+                font-size: 1.2em;
+                background: none;
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                border-radius: 4px;
+                transition: background 0.2s;
+            }
+            .menu:hover {
+                background: rgba(255,255,255,0.1);
+            }
+            .logo img {
+                height: 70px;
+                width: auto;
+                vertical-align: middle;
+                max-width: 180px;
+            }
+            .dropdown {
+                display: none;
+                position: fixed;
+                background-color: #fff;
+                box-shadow: 0px 4px 16px rgba(67, 1, 1, 0.2);
+                left: 10px;
+                top: 70px;
+                width: 180px;
+                z-index: 2000;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .dropdown a {
+                display: block;
+                padding: 14px 18px;
+                color: rgb(67, 1, 1);
+                text-decoration: none;
+                font-weight: 500;
+                text-align: left;
+                border-bottom: 1px solid #eee;
+                transition: background 0.2s;
+            }
+            .dropdown a:last-child {
+                border-bottom: none;
+            }
+            .dropdown a:hover {
+                background-color: #f4f4f4;
+            }
+            .content {
+                padding-top: 110px;
+                width: 100vw;
+                max-width: 100vw;
+            }
+            .content img {
+                width: 100%;
+                max-width: 900px;
+                height: auto;
+                margin: 20px auto;
+                display: block;
+                border-radius: 8px;
+                box-shadow: 0px 4px 8px rgba(0,0,0,0.12);
+            }
+            .info {
+                background-color: rgb(67, 1, 1);
+                color: white;
+                padding: 32px 5vw;
+                border-radius: 12px;
+                margin: 24px auto;
+                max-width: 900px;
+                box-shadow: 0 2px 12px rgba(67,1,1,0.08);
+            }
+            .contacts {
+                padding: 24px 5vw;
+                background-color: #f4f4f4;
+                border-radius: 12px;
+                margin: 0 auto 32px auto;
+                max-width: 900px;
+                box-shadow: 0 2px 12px rgba(67,1,1,0.08);
+            }
+            @media (max-width: 1024px) {
+                .logo img {
+                    height: 55px;
+                }
+                .info {
+                    padding: 20px 3vw;
+                    font-size: 16px;
+                }
+                .content img {
+                    max-width: 98vw;
+                }
+            }
+            @media (max-width: 700px) {
+                .header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 10px 2vw;
+                }
+                .logo img {
+                    height: 40px;
+                }
+                .info {
+                    padding: 12px 2vw;
+                    font-size: 14px;
+                }
+                .contacts {
+                    padding: 14px 2vw;
+                }
+            }
+            @media (max-width: 480px) {
+                .header {
+                    min-height: 50px;
+                    padding: 6px 1vw;
+                }
+                .logo img {
+                    height: 28px;
+                }
+                .info, .contacts {
+                    padding: 8px 1vw;
+                    font-size: 13px;
+                }
+            }
+        </style> >-->
+
+
+<body>
+    <div class="header">
+        <button class="menu" onclick="toggleMenu()">Menu</button>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Logo Fraschina Giardini">
+        </a>
+    </div>
+
+    <div class="dropdown" id="dropdownMenu">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi Siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="contatti.html">Contatti</a>
+    </div>
+    
+    <!-- RIMUOVI QUESTA SEZIONE DUPLICATA DEL LOGO
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo.png" alt="Logo Fraschina Giardini">
+        </a>
+    </div>
+    -->
+
+    <div class="content">
+        <img src="Screenshot 2025-09-26 alle 14.59.29.png" alt="Immagine Servizi">
+        <div class="info">
+            <h3>Contattaci per maggiori informazioni</h3>
+            <h4>Email: info@fraschinagiardini.com</h4>
+            <h4>Telefono: 076 816 38 38</h4>
+        </div>
+
+        <img src="Screenshot 2025-09-23 alle 21.36.37.png" alt="Mappa o sede Fraschina Giardini">
+    </div>
+
+    <div class="contacts">
+        <h3>Contatti</h3>
+        <p>Telefono: 076 816 38 38</p>
+        <p>Email: info@fraschinagiardini.com</p>
+        <p>Instagram: @fraschina_giardini</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("dropdownMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

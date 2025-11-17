@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- LINK ALLA SITEMAP -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+    <!-- Collegamento al file CSS esterno -->
+    <link rel="stylesheet" href="style.css">
+<!-- ...continua con il resto del codice... -->
+
+    <!-- <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #fff;
+        }
+        .header {
+            background-color: rgb(67, 1, 1);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 5vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            z-index: 1000;
+            min-height: 70px;
+        }
+        .menu {
+            cursor: pointer;
+            font-size: 1.2em;
+            background: none;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .menu:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        .logo img {
+            height: 70px;
+            width: auto;
+            vertical-align: middle;
+            max-width: 180px;
+        }
+        .dropdown {
+            display: none;
+            position: fixed;
+            background-color: #fff;
+            box-shadow: 0px 4px 16px rgba(67, 1, 1, 0.2);
+            left: 10px;
+            top: 70px;
+            width: 180px;
+            z-index: 2000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .dropdown a {
+            display: block;
+            padding: 14px 18px;
+            color: rgb(67, 1, 1);
+            text-decoration: none;
+            font-weight: 500;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+        .dropdown a:last-child {
+            border-bottom: none;
+        }
+        .dropdown a:hover {
+            background-color: #f4f4f4;
+        }
+        .content {
+            padding-top: 110px;
+            width: 100vw;
+            max-width: 100vw;
+        }
+        .slider {
+            position: relative;
+            width: 100vw;
+            height: 60vh;
+            min-height: 250px;
+            max-height: 600px;
+            overflow: hidden;
+            background-color: black;
+            margin: 0 auto 24px auto;
+        }
+        .slider img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .slider img.active {
+            opacity: 1;
+        }
+        .info {
+            background-color: rgb(67, 1, 1);
+            color: white;
+            padding: 32px 5vw;
+            border-radius: 12px;
+            margin: 24px auto;
+            max-width: 900px;
+            box-shadow: 0 2px 12px rgba(67,1,1,0.08);
+        }
+        .big-image {
+            width: 100%;
+            max-width: 900px;
+            height: 40vh;
+            min-height: 180px;
+            object-fit: cover;
+            background-color: black;
+            display: block;
+            margin: 0 auto 32px auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(67,1,1,0.08);
+        }
+        .contacts {
+            padding: 24px 5vw;
+            background-color: #f4f4f4;
+            border-radius: 12px;
+            margin: 0 auto 32px auto;
+            max-width: 900px;
+            box-shadow: 0 2px 12px rgba(67,1,1,0.08);
+        }
+        @media (max-width: 1024px) {
+            .logo img {
+                height: 55px;
+            }
+            .info {
+                padding: 20px 3vw;
+                font-size: 16px;
+            }
+            .big-image {
+                height: 28vh;
+            }
+            .slider {
+                height: 32vh;
+            }
+        }
+        @media (max-width: 700px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 2vw;
+            }
+            .logo img {
+                height: 40px;
+            }
+            .info {
+                padding: 12px 2vw;
+                font-size: 14px;
+            }
+            .slider {
+                height: 22vh;
+            }
+            .big-image {
+                height: 18vh;
+            }
+            .contacts {
+                padding: 14px 2vw;
+            }
+        }
+        @media (max-width: 480px) {
+            .header {
+                min-height: 50px;
+                padding: 6px 1vw;
+            }
+            .logo img {
+                height: 28px;
+            }
+            .info, .contacts {
+                padding: 8px 1vw;
+                font-size: 13px;
+            }
+            .slider {
+                height: 14vh;
+            }
+            .big-image {
+                height: 10vh;
+            }
+        }
+    </style> >-->
+</head>
+<body>
+    <div class="header">
+        <button class="menu" onclick="toggleMenu()">Menu</button>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Logo Fraschina Giardini">
+        </a>
+    </div>
+
+    <div class="dropdown" id="dropdownMenu">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi Siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="contatti.html">Contatti</a>
+    </div>
+
+    <div class="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="Logo Fraschina Giardini">
+    </a>
+    </div>
+
+    <div class="content">
+        <div class="slider">
+            <img src="Screenshot 2025-09-23 alle 19.58.45.png" class="active" alt="Foto 1">
+            <img src="Screenshot 2025-09-23 alle 18.14.43.png" alt="Foto 2">
+            <img src="Screenshot 2025-09-23 alle 20.40.33.png" alt="Foto 3">
+        </div>
+
+        <div class="info"> 
+            <h2>Fraschina Giardini</h2>
+            <h4>
+                <p>Curiamo i tuoi spazi verdi come fossero i nostri, con professionalità e passione:</p>
+                <p>diamo forma alla natura con cura e precisione, offrendo servizi di manutenzione,</p> 
+                <p>cura del prato e soluzioni agricole personalizzate.</p>
+            </h4>
+        </div>
+
+        <img src="Screenshot 2025-09-20 alle 14.26.05.png" alt="Foto grande" class="big-image">
+    </div>
+
+    <div class="contacts">
+        <h3>Contatti</h3>
+        <p>Telefono: 076 816 38 38 </p>
+        <p>Email: info@fraschinagiardini.com</p>
+        <p>Instagram: @fraschina_giardini</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("dropdownMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+
+        let current = 0;
+        const slides = document.querySelectorAll(".slider img");
+
+        function showNextSlide() {
+            slides[current].classList.remove("active");
+            current = (current + 1) % slides.length;
+            slides[current].classList.add("active");
+        }
+
+        setInterval(showNextSlide, 4000);
+    </script>
+</body>
+</html>
