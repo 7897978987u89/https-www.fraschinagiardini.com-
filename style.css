@@ -15,7 +15,7 @@ img {
     border-radius: 12px;
 }
 .header {
-    background-color: rgb(67, 1, 1);
+    background-color: #221C35;
     color: white;
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@ body {
 
 /* Header */
 .header {
-    background-color: rgb(67, 1, 1);
+    background-color: #221C35;
     color: white;
     display: flex;
     align-items: center;
@@ -180,7 +180,7 @@ body {
 .dropdown a {
     display: block;
     padding: 14px 18px;
-    color: rgb(67, 1, 1);
+    color: #221C35;
     text-decoration: none;
     font-weight: 500;
     text-align: left;
@@ -244,7 +244,7 @@ img {
 
 /* Info e contatti */
 .info {
-    background-color: rgb(67, 1, 1);
+    background-color: #221C35;
     color: white;
     padding: 32px 5vw;
     border-radius: 12px;
@@ -361,7 +361,7 @@ img {
 .dropdown a {
     display: block;
     padding: 14px 18px;
-    color: rgb(67, 1, 1);
+    color: #221C35;
     text-decoration: none;
     font-weight: 500;
     text-align: left;
@@ -403,7 +403,7 @@ img {
     opacity: 1;
 }
 .info {
-    background-color: rgb(67, 1, 1);
+    background-color: #221C35;
     color: white;
     padding: 32px 5vw;
     border-radius: 12px;
@@ -487,4 +487,5 @@ img {
     .big-image {
         height: 10vh;
     }
+
 }
